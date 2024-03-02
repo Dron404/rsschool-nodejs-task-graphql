@@ -9,8 +9,9 @@ import {
   UserType,
 } from './gcl-types.js';
 import { UUIDType } from './uuid.js';
+import prisma from '../prisma.service.js';
 
-const prisma = new PrismaClient();
+
 
 export const Query = new GraphQLObjectType({
   name: 'Query',
