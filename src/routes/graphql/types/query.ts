@@ -1,4 +1,3 @@
-import { PrismaClient } from '@prisma/client';
 import { GraphQLObjectType, GraphQLOutputType, GraphQLList } from 'graphql';
 import { MemberTypeId } from '../../member-types/schemas.js';
 import {
@@ -10,8 +9,6 @@ import {
 } from './gcl-types.js';
 import { UUIDType } from './uuid.js';
 import prisma from '../prisma.service.js';
-
-
 
 export const Query = new GraphQLObjectType({
   name: 'Query',
